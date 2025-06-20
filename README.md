@@ -8,8 +8,7 @@
 
 # Cap 1 - Automação e Inteligência na FarmTech Solutions
 
-> Trabalho de Conclusão de Semestre – FIAP  
-> Disciplina: [Nome da Disciplina / Código, se aplicável]
+
 
 ---
 
