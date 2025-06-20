@@ -457,7 +457,7 @@ try:
 except:
     st.warning("Modelo IA não carregado; usando lógica simplificada.")
 
-
+```
 ## Estrutura do Dashboard
 
 ### 1. Visão Geral
@@ -524,7 +524,6 @@ except:
   - Decisão IA correspondente  
   - Barra de progresso para cada mensagem  
 
-```
 
 ## Integração MQTT
 
