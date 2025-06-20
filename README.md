@@ -460,6 +460,8 @@ except:
 ```
 ## Estrutura do Dashboard
 
+ - ![Dashboard Melhorado](docs/improved_dashboard.png) 
+
 ### 1. Visão Geral
 - **Título**: FarmTech Solutions – Monitoramento Inteligente de Agricultura  
 - **Subtítulo / Descrição**: Apresentação do sistema integrado (sensores ESP32, display LCD, broker MQTT, modelo de IA)  
