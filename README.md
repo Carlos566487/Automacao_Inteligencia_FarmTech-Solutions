@@ -696,14 +696,13 @@ Distribuído sob a licença MIT. Veja LICENSE para mais detalhes.
 
 📎 Recursos Rápidos
 🔽 Baixar estrutura pronta (.zip)
-📦 Repositório GitHub: https://github.com/seu-usuario/farmtech-solutions
+📦 Repositório GitHub: https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
+![image](https://github.com/user-attachments/assets/cd590921-cf46-4fdc-8ab1-b7d8a8d445fa)
+
 
 ---
 
-## Contato
 
-- Grupo FIAP: email@fiap.com.br
-- GitHub: https://github.com/seu-usuario/seu-repositorio-farmtech
 
 ---
 
