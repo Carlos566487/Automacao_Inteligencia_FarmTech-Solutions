@@ -558,7 +558,7 @@ Exemplo de sequência de mensagens MQTT:
   {"valor_umidade": 75, "valor_nutrientes": 1}
 ]
 
- ![Terminal MQTT no Replit](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/replit_mqtt_terminal_high_quality.png)
+ ![Terminal MQTT no Replit](docs/replit_mqtt_terminal_high_quality.png)
 
 
 ---
