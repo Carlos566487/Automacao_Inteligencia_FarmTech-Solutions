@@ -291,6 +291,13 @@ O modelo é responsável por recomendar ações agronômicas (irrigar, adubar, a
 > Diagrama simulado no [Wokwi](https://wokwi.com/projects/434020356732481537) com ESP32, potenciômetro (umidade) e display LCD.  
 > Exibe status de irrigação com base em faixas de umidade lidas.
 
+![ESP32](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/ESP32.png) 
+
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+# Automatically added based on includes:
+LiquidCrystal I2C
 
 ### Código C/C++ para ESP32
 
@@ -469,6 +476,8 @@ except:
   - Média Umidade (metric)  
   - Ações Mais Comuns (metric)  
 
+   ![Visão Geral](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/VisaoGerak_1.png)  
+
 ### 2. Dados Históricos
 - **Filtros**  
   - Selectbox “Selecione o Sensor” (`id_sensor`)  
@@ -479,7 +488,9 @@ except:
   - “Variação de Umidade” (linha com limites inferior/superior)  
   - “Níveis de Nutrientes” (barra)  
 - **Distribuição de Ações**  
-  - Gráfico de barras com contagem de `acao_prevista`  
+  - Gráfico de barras com contagem de `acao_prevista` 
+
+   ![Dados Históricos](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/DadosHistoricos_2.png)   
 
 ### 3. Simulador de Sensores
 - **Parâmetros do Sensor**  
@@ -491,6 +502,8 @@ except:
 - **Dados Simulados Enviados**  
   - JSON com `valor_umidade`, `valor_nutrientes`, `timestamp` (apenas se houver envio)  
 
+   ![Simulador](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/Simulador_3.png)  
+
 ### 4. IA + MQTT
 #### 4.1 Sistema de Decisão com IA
 - **Descrição do Modelo**  
@@ -500,7 +513,9 @@ except:
 - **Simulador de Decisão IA**  
   - Slider “Umidade (%)”  
   - Slider “Nutrientes”  
-  - Painel de decisão (Irrigar, Adubar, etc.) com cor de fundo dinâmica  
+  - Painel de decisão (Irrigar, Adubar, etc.) com cor de fundo dinâmica 
+
+  ![IA + MQTT](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/IA_MQTT_4.png) 
 
 #### 4.2 Simulação de Fluxo MQTT
 - **Botão**: “Iniciar Simulação MQTT”  
@@ -544,6 +559,7 @@ Exemplo de sequência de mensagens MQTT:
   {"valor_umidade": 75, "valor_nutrientes": 1}
 ]
 
+ ![Terminal MQTT no Replit](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/replit_mqtt_terminal_high_quality.png)
 
 
 ---
@@ -572,13 +588,17 @@ Exemplo de sequência de mensagens MQTT:
 ```
 /
 ├── README.md
-├── requirements.txt
+├── app.py                          # Aplicação Streamlit
+├── farmtech_leituras_formatado.csv # Base de dados simulada
+├── requirements.txt                # Lista de dependências
+├── prediction_model.py             # Modelo de previsão
+└── env/                            # Variaveis do Sistema
+    └── ....
 ├── assets/
 │   └── logo-fiap.png
 ├── data/
 │   └── farmtech_leituras_formatado.csv
 ├── model/
-│   ├── train_model.py
 │   ├── modelo_irrigacao.joblib
 │   └── label_encoder.joblib
 ├── src/
@@ -589,10 +609,16 @@ Exemplo de sequência de mensagens MQTT:
 │   └── esp32/
 │       └── farmtech_esp32.ino
 ├── docs/
-│   ├── visao_geral.png
-│   ├── dados_historicos.png
-│   ├── simulador.png
-│   └── ia_mqtt.png
+│       ├── DadosHistoricos_2.png
+│       ├── ESP32.png
+│       ├── IA_MQTT_4.png
+│       ├── Simulador_3.png
+│       ├── VisaoGerak_1.png
+│       ├── diagram-eaquematico.png
+│       ├── diagrama-sensores.png
+│       ├── improved_dashboard.png
+│       ├── replit_mqtt_terminal_high_quality.png
+│       └── simulacao_esp32_farmtech.png
 ├── .gitignore
 └── LICENSE
 ```
@@ -622,13 +648,14 @@ Exemplo de sequência de mensagens MQTT:
 Instale-as via:
 
 ```bash
+
 pip install -r requirements.txt
 
 📦 Instalação
 
 1. Clone o Repositório
 
-git clone https://github.com/seu-usuario/farmtech-solutions.git
+git clone https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
 cd farmtech-solutions
 
 2. Crie um Ambiente Virtual (opcional, mas recomendado)
@@ -650,19 +677,24 @@ run.bat
 Manualmente:
 streamlit run app.py
 
+
 🌐 Acesse no Navegador
 
 A aplicação será aberta automaticamente no seu navegador, normalmente em:
 http://localhost:8501
+
+```
 
 📁 Estrutura do Projeto
 
 farmtech-solutions/
 ├── app.py                          # Aplicação Streamlit
 ├── farmtech_leituras_formatado.csv # Base de dados simulada
-├── requirements.txt               # Lista de dependências
-├── run.sh                         # Script Linux/macOS
-└── run.bat                        # Script Windows
+├── requirements.txt                # Lista de dependências
+├── prediction_model.py             # Modelo de previsão
+└── env                             # Variaveis do Sistema
+    └── ....
+      
 
 
 🚀 Funcionalidades
@@ -696,14 +728,7 @@ Distribuído sob a licença MIT. Veja LICENSE para mais detalhes.
 📎 Recursos Rápidos
 🔽 Baixar estrutura pronta (.zip)
 📦 Repositório GitHub: https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
-![image](https://github.com/user-attachments/assets/cd590921-cf46-4fdc-8ab1-b7d8a8d445fa)
-
 
 ---
-
-
-
----
-
 
 
