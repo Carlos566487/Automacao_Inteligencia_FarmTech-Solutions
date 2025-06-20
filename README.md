@@ -286,18 +286,18 @@ O modelo é responsável por recomendar ações agronômicas (irrigar, adubar, a
 
 ## 🧪 Simulação ESP32 – FarmTech Solutions
 
-![Simulação ESP32](docs/simulacao_esp32_farmtech.png)
+
 
 > Diagrama simulado no [Wokwi](https://wokwi.com/projects/434020356732481537) com ESP32, potenciômetro (umidade) e display LCD.  
 > Exibe status de irrigação com base em faixas de umidade lidas.
 
-![ESP32](docs/ESP32.png) 
+![Simulação ESP32](docs/simulacao_esp32_farmtech.png)
 
-# Wokwi Library List
-# See https://docs.wokwi.com/guides/libraries
+- Wokwi Library List
+- See https://docs.wokwi.com/guides/libraries
 
-# Automatically added based on includes:
-LiquidCrystal I2C
+- Automatically added based on includes:
+  LiquidCrystal I2C
 
 ### Código C/C++ para ESP32
 
@@ -476,7 +476,7 @@ except:
   - Média Umidade (metric)  
   - Ações Mais Comuns (metric)  
 
-   ![Visão Geral](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/VisaoGerak_1.png)  
+   ![Visão Geral](docs/VisaoGerak_1.png)  
 
 ### 2. Dados Históricos
 - **Filtros**  
@@ -490,7 +490,7 @@ except:
 - **Distribuição de Ações**  
   - Gráfico de barras com contagem de `acao_prevista` 
 
-   ![Dados Históricos](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/DadosHistoricos_2.png)   
+   ![Dados Históricos](docs/DadosHistoricos_2.png)   
 
 ### 3. Simulador de Sensores
 - **Parâmetros do Sensor**  
@@ -502,7 +502,7 @@ except:
 - **Dados Simulados Enviados**  
   - JSON com `valor_umidade`, `valor_nutrientes`, `timestamp` (apenas se houver envio)  
 
-   ![Simulador](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/Simulador_3.png)  
+   ![Simulador](docs/Simulador_3.png)  
 
 ### 4. IA + MQTT
 #### 4.1 Sistema de Decisão com IA
@@ -515,7 +515,7 @@ except:
   - Slider “Nutrientes”  
   - Painel de decisão (Irrigar, Adubar, etc.) com cor de fundo dinâmica 
 
-  ![IA + MQTT](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/IA_MQTT_4.png) 
+  ![IA + MQTT](docs/IA_MQTT_4.png) 
 
 #### 4.2 Simulação de Fluxo MQTT
 - **Botão**: “Iniciar Simulação MQTT”  
