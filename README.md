@@ -286,12 +286,12 @@ O modelo é responsável por recomendar ações agronômicas (irrigar, adubar, a
 
 ## 🧪 Simulação ESP32 – FarmTech Solutions
 
-![Simulação ESP32](simulacao_esp32_farmtech.png)
+![Simulação ESP32](docs/simulacao_esp32_farmtech.png)
 
 > Diagrama simulado no [Wokwi](https://wokwi.com/projects/434020356732481537) com ESP32, potenciômetro (umidade) e display LCD.  
 > Exibe status de irrigação com base em faixas de umidade lidas.
 
-![ESP32](https://raw.githubusercontent.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions/main/docs/ESP32.png) 
+![ESP32](docs/ESP32.png) 
 
 # Wokwi Library List
 # See https://docs.wokwi.com/guides/libraries
