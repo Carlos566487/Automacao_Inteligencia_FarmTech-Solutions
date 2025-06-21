@@ -157,8 +157,6 @@ Preparar o sistema para uma possível automação física com atuadores e contro
   - Cálculo de confiança: probabilidade máxima × 100.
   - Cache de predições com timestamp (classe PredictionSystem).
 
-## Descrição Técnica
-
 Esta seção detalha os aspectos técnicos do sistema FarmTech Solutions, especialmente o modelo preditivo de irrigação/adubação (Fase 4) e seus componentes auxiliares. O objetivo é fornecer clareza sobre o funcionamento interno, pré-processamento de dados, arquitetura do modelo, métricas e integração com o ecossistema IoT.
 
 ### 1. Modelo Preditivo de Irrigação/Adubação (Fase 4)
@@ -359,7 +357,7 @@ O modelo é responsável por recomendar ações agronômicas (irrigar, adubar, a
 
 ---
 
-# 🧪 Diagrama Eletrico ESP32
+# 🧪 Diagrama Elétrico ESP32
  ![Diagrama Esquemático](docs/diagram-eaquematico.png) 
 
 ---
@@ -728,14 +726,15 @@ Distribuído sob a licença MIT.
     Repositório GitHub
     📦 Repositório GitHub: https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
 
-    Simulate este projeto em: https://wokwi.com
-    📦 Downloaded from https://wokwi.com/projects/434020356732481537
+    💻Simulate este projeto em: https://wokwi.com
+       https://wokwi.com/projects/434020356732481537
 
-    Vídeo Demonstração - Automação e inteligência Artificial na FarmaTech Solutions
-    📦 https://www.youtube.com/watch?v=89fUrCubX3g
+    💻Vídeo Demonstração - Automação e inteligência Artificial na FarmaTech Solutions
+       https://www.youtube.com/watch?v=89fUrCubX3g
 
-    Integração MQTT - Replit.com
-    📦 https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py
+    💻 Integração MQTT - Replit.com
+       https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py
+
 
 ---
 
