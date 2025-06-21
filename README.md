@@ -108,14 +108,15 @@ Preparar o sistema para uma possível automação física com atuadores e contro
 │       ├── diagrama-sensores.png
 │       ├── improved_dashboard.png
 │       ├── replit_mqtt_terminal_high_quality.png
-│       └── simulacao_esp32_farmtech.png
+│       ├── simulacao_esp32_farmtech.png
+        └── sequencia_mqtt.png
 ├── .gitignore
 └── LICENSE
 ```
 
 ## Links Úteis Disponíveis
 
-# [Simular o Projeto no Wokwi](https://wokwi.com/projects/434020356732481537)
+ ### [Simular o Projeto no Wokwi](https://wokwi.com/projects/434020356732481537)
 
   Ambiente de simulação de hardware virtual para prototipagem de firmware e lógica de IoT.  
   - **Objetivo**: testar fluxos de leitura de sensores (e.g., temperatura, umidade, luminosidade) e atuadores (e.g., válvulas de irrigação) em ESP32 ou outras placas suportadas, sem necessidade de hardware físico.  
@@ -123,13 +124,13 @@ Preparar o sistema para uma possível automação física com atuadores e contro
   - **Benefícios**: acelera o desenvolvimento e a experimentação de cenários (edge computing), permitindo ajustes no código antes de implantar em campo.
 
 
-# [Vídeo Demonstração – Automação e Inteligência Artificial na FarmaTech Solutions](https://www.youtube.com/watch?v=89fUrCubX3g)
+ ### [Vídeo Demonstração – Automação e Inteligência Artificial na FarmaTech Solutions](https://www.youtube.com/watch?v=89fUrCubX3g)
 
   Demonstração prática de todo o fluxo de Agricultura de Precisão: do sensoriamento à tomada de decisão com IA.  
   - **Conteúdo Técnico**: exemplifica a arquitetura de sensores conectados (rede de sensores wireless, ESP32/MCU, gateway), comunicação via MQTT ou RESTful APIs, pipeline de dados (ingestão, armazenamento em nuvem), e aplicação de modelos de Machine Learning para previsão de irrigação, detecção de anomalias e otimização de recursos.  
   - **Aprendizado**: mostra dashboards de monitoramento (visualização de telemetria em tempo real), uso de frameworks de IA (pode incluir bibliotecas Python, TensorFlow/PyTorch ou serviços gerenciados), e automação de atuadores com base em regras ou inferências de ML.
 
-# [Integração MQTT – Exemplo no Replit](https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py) 
+ ### [Integração MQTT – Exemplo no Replit](https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py) 
 
   Código de referência em Python para client MQTT, demonstrando publicação/assinatura de tópicos de sensoriamento e comandos de atuação.  
   - **Biblioteca**: geralmente utiliza `paho-mqtt` ou similar, mostrando configuração de broker (e.g., broker público ou privado via TLS), definição de tópicos (namespaces para sensores de solo, clima, atuadores de bomba) e QoS.  
@@ -347,8 +348,6 @@ O modelo é responsável por recomendar ações agronômicas (irrigar, adubar, a
 
 ## 🧪 Simulação ESP32 – FarmTech Solutions
 
-
-
 > Diagrama simulado no [Wokwi](https://wokwi.com/projects/434020356732481537) com ESP32, potenciômetro (umidade) e display LCD.  
 > Exibe status de irrigação com base em faixas de umidade lidas.
 
@@ -359,6 +358,18 @@ O modelo é responsável por recomendar ações agronômicas (irrigar, adubar, a
 
 - Automatically added based on includes:
   LiquidCrystal I2C
+
+---
+
+# 🧪 Diagrama Eletrico ESP32
+ ![Diagrama Esquemático](docs/diagram-eaquematico.png) 
+
+---
+    
+# 🧪  Diagrama de Sensores e Display
+![Diagrama de Sensores](docs/diagrama-sensores.png)  
+
+---
 
 ### Código C/C++ para ESP32
 
@@ -620,7 +631,7 @@ Exemplo de sequência de mensagens MQTT:
   {"valor_umidade": 75, "valor_nutrientes": 1}
 ]
 
- ![Terminal MQTT no Replit](docs/replit_mqtt_terminal_high_quality.png)
+ ![Terminal MQTT no Replit](docs/sequencia_mqtt.png)
 
 
 ---
@@ -710,13 +721,23 @@ http://localhost:8501
 ---
 
 ## 📄 Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais detalhes.
+Distribuído sob a licença MIT.
 
 ---
 
 ## 📎 Recursos Rápidos
-🔽 Baixar estrutura pronta (.zip)
-📦 Repositório GitHub: https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
+
+    Repositório GitHub
+    📦 Repositório GitHub: https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
+
+    Simulate este projeto em: https://wokwi.com
+    📦 Downloaded from https://wokwi.com/projects/434020356732481537
+
+    Vídeo Demonstração - Automação e inteligência Artificial na FarmaTech Solutions
+    📦 https://www.youtube.com/watch?v=89fUrCubX3g
+
+    Integração MQTT - Replit.com
+    📦 https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py
 
 ---
 
