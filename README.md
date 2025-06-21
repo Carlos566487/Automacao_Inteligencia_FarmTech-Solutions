@@ -16,8 +16,9 @@
 
 1. [Equipe e Professores](#equipe-e-professores)
 2. [Visão Geral do Projeto](#visão-geral-do-projeto)
-3. [Motivação e Objetivos](#motivação-e-objetivos)
-4. [Descrição Técnica](#descrição-técnica)
+3. [Estrutura do Repositório](#estrutura-do-repositório)
+4. [Links Uteis Disponíveis](#descrição-links)
+   - [Descrição Técnica](#descrição-técnica)
    - [Modelo Preditivo de Irrigação (Fase 4)](#modelo-preditivo-de-irrigação-fase-4)
    - [Simulação ESP32 / Wokwi](#simulação-esp32--wokwi)
    - [Código C/C++ para ESP32](#código-cc-para-esp32)
@@ -25,15 +26,10 @@
    - [Dashboard Web com Streamlit](#dashboard-web-com-streamlit)
    - [Integração MQTT](#integração-mqtt)
 5. [Tecnologias e Dependências](#tecnologias-e-dependências)
-6. [Estrutura do Repositório](#estrutura-do-repositório)
-7. [Instruções de Instalação e Execução](#instruções-de-instalação-e-execução)
-8. [Detalhes dos Dados](#detalhes-dos-dados)
-9. [Treinamento e Salvamento do Modelo](#treinamento-e-salvamento-do-modelo)
-10. [Uso / Demonstração](#uso--demonstração)
-11. [Melhorias Futuras e Considerações](#melhorias-futuras-e-considerações)
-12. [Licença](#licença)
-13. [Contato](#contato)
-
+6. [Instruções de Instalação e Execução](#instruções-de-instalação-e-execução)
+7. [Biblioteca Utilizada](#detalhes-dos-dados)
+8. [Licença](#licença)
+10. [Recursos Rápidos](Recursos)
 ---
 
 ## Equipe e Professores
@@ -119,45 +115,28 @@ Preparar o sistema para uma possível automação física com atuadores e contro
 
 ## Links Úteis Disponíveis
 
-- [Simular o Projeto no Wokwi](https://wokwi.com/projects/434020356732481537)  
+# [Simular o Projeto no Wokwi](https://wokwi.com/projects/434020356732481537)
+
   Ambiente de simulação de hardware virtual para prototipagem de firmware e lógica de IoT.  
   - **Objetivo**: testar fluxos de leitura de sensores (e.g., temperatura, umidade, luminosidade) e atuadores (e.g., válvulas de irrigação) em ESP32 ou outras placas suportadas, sem necessidade de hardware físico.  
   - **Uso**: valide a lógica de coleta de dados, comunicação via MQTT ou HTTP, e depure o código em C/C++ ou MicroPython no ambiente integrado do Wokwi.  
   - **Benefícios**: acelera o desenvolvimento e a experimentação de cenários (edge computing), permitindo ajustes no código antes de implantar em campo.
 
-- [Vídeo Demonstração – Automação e Inteligência Artificial na FarmaTech Solutions](https://www.youtube.com/watch?v=89fUrCubX3g)  
+
+# [Vídeo Demonstração – Automação e Inteligência Artificial na FarmaTech Solutions](https://www.youtube.com/watch?v=89fUrCubX3g)
+
   Demonstração prática de todo o fluxo de Agricultura de Precisão: do sensoriamento à tomada de decisão com IA.  
   - **Conteúdo Técnico**: exemplifica a arquitetura de sensores conectados (rede de sensores wireless, ESP32/MCU, gateway), comunicação via MQTT ou RESTful APIs, pipeline de dados (ingestão, armazenamento em nuvem), e aplicação de modelos de Machine Learning para previsão de irrigação, detecção de anomalias e otimização de recursos.  
   - **Aprendizado**: mostra dashboards de monitoramento (visualização de telemetria em tempo real), uso de frameworks de IA (pode incluir bibliotecas Python, TensorFlow/PyTorch ou serviços gerenciados), e automação de atuadores com base em regras ou inferências de ML.
 
-- [Integração MQTT – Exemplo no Replit](https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py)  
+# [Integração MQTT – Exemplo no Replit](https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py) 
+
   Código de referência em Python para client MQTT, demonstrando publicação/assinatura de tópicos de sensoriamento e comandos de atuação.  
   - **Biblioteca**: geralmente utiliza `paho-mqtt` ou similar, mostrando configuração de broker (e.g., broker público ou privado via TLS), definição de tópicos (namespaces para sensores de solo, clima, atuadores de bomba) e QoS.  
   - **Arquitetura**: exemplifica como integrar dispositivos de borda (edge) com backend em nuvem ou servidor local, interpretando JSON payloads, tratando reconexões, e permitindo escalabilidade de telemetria.  
   - **Extensões possíveis**: adicionar autenticação via certificados, persistência em banco de dados (TimescaleDB, InfluxDB), integração com dashboards (Grafana, Node-RED) e orquestração de microserviços.
 
 ---
-
-### Como utilizar esta seção
-1. **Clique no link** para abrir imediatamente o recurso desejado.  
-2. **Leia a descrição** para entender o propósito técnico antes de navegar.  
-3. **Contribua**: se identificar recursos adicionais (por exemplo, documentação de APIs, especificações de hardware, tutoriais de modelagem de dados ou notebooks de ML), sugira via Pull Request a inclusão de novos itens nesta lista, garantindo sempre títulos claros e descrições concisas.  
-4. **Boas práticas**: mantenha os links atualizados (verifique periodicamente se URLs mudaram ou projeto foi movido), inclua versão ou data de criação quando pertinente (ex.: “Exemplo MQTT v1.0 – criado em Jun/2025”).
-
----
-
-> **Dica para colaboradores**: Você pode usar badges ou ícones pequenos (shields.io) antes dos links, para indicar o tipo de recurso (e.g., ![Simulação](https://img.shields.io/badge/simulation-Wokwi-blue), ![Vídeo](https://img.shields.io/badge/video-YouTube-red), ![Código](https://img.shields.io/badge/code-Replit-green)). Isso torna a seção mais visual e ajuda o usuário a identificar rapidamente o tipo de conteúdo.
-
-
-```markdown
-## Links Úteis Disponíveis
-
-- ![Simulação](https://img.shields.io/badge/simulation-Wokwi-blue) [Simular o Projeto no Wokwi](https://wokwi.com/projects/434020356732481537)  
-  Ambiente de simulação de hardware virtual para prototipagem de firmware e lógica de IoT. [...]  
-- ![Vídeo](https://img.shields.io/badge/video-YouTube-red) [Vídeo Demonstração – Automação e Inteligência Artificial](https://www.youtube.com/watch?v=89fUrCubX3g)  
-  Demonstração prática de todo o fluxo de Agricultura de Precisão: sensoriamento, comunicação, pipeline de dados e aplicação de IA. [...]  
-- ![Código](https://img.shields.io/badge/code-Replit-green) [Integração MQTT – Exemplo no Replit](https://replit.com/@estevestayna96/farmtech-mqtt#mqtt_modelo_farmtech.py)  
-  Código de referência em Python para client MQTT: configuração de broker, tópicos, publicação/assinatura, JSON e tratamento de falhas. [...]
 ```
 
 
@@ -677,7 +656,7 @@ Exemplo de sequência de mensagens MQTT:
 - Broker MQTT (local ou público, ex: Mosquitto)
 - Ambiente virtual (`venv`) recomendado
 
-### Bibliotecas utilizadas:
+## Bibliotecas utilizadas:
 
 💻 Instalação e Execução
 
@@ -722,54 +701,20 @@ Manualmente:
 streamlit run app.py
 
 
-🌐 Acesse no Navegador
+# 🌐 Acesse no Navegador
 
 A aplicação será aberta automaticamente no seu navegador, normalmente em:
 http://localhost:8501
 
 ```
-
-📁 Estrutura do Projeto
-
-farmtech-solutions/
-├── app.py                          # Aplicação Streamlit
-├── farmtech_leituras_formatado.csv # Base de dados simulada
-├── requirements.txt                # Lista de dependências
-├── prediction_model.py             # Modelo de previsão
-└── env                             # Variaveis do Sistema
-    └── ....
-      
-
-
-🚀 Funcionalidades
-📊 Dashboard interativo com dados históricos
-
-🤖 Simulador de decisões com IA
-
-🧪 Simulador de sensores via sliders
-
-📡 Simulação de fluxo MQTT
-
-🖥️ Display LCD simulado
-
-📈 Visualização gráfica de tendências e ações recomendadas
-
-
-
 ---
 
-## Detalhes dos Dados
-
-CSV com colunas: timestamp, id_sensor, valor_umidade, valor_nutrientes, acao_prevista
-
----
-
-📄 Licença
+## 📄 Licença
 Distribuído sob a licença MIT. Veja LICENSE para mais detalhes.
 
 ---
 
-📎 Recursos Rápidos
+## 📎 Recursos Rápidos
 🔽 Baixar estrutura pronta (.zip)
 📦 Repositório GitHub: https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
 
