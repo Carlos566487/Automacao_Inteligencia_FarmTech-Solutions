@@ -138,8 +138,6 @@ Preparar o sistema para uma possível automação física com atuadores e contro
   - **Extensões possíveis**: adicionar autenticação via certificados, persistência em banco de dados (TimescaleDB, InfluxDB), integração com dashboards (Grafana, Node-RED) e orquestração de microserviços.
 
 ---
-```
-
 
 ## Descrição Técnica
 
