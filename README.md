@@ -726,7 +726,7 @@ Distribuído sob a licença MIT.
     Repositório GitHub
     📦 Repositório GitHub: https://github.com/Carlos566487/Automacao_Inteligencia_FarmTech-Solutions.git
 
-    💻Simulate este projeto em: https://wokwi.com
+    💻Simule este projeto em: https://wokwi.com
        https://wokwi.com/projects/434020356732481537
 
     💻Vídeo Demonstração - Automação e inteligência Artificial na FarmaTech Solutions
